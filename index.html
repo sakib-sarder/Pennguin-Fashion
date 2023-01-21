@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
     <title>Document</title>
 </head>
+
 <body>
-    <button class="bg-sky-500 px-3 py-1 ml-40 mt-40 rounded-lg text-white hover:bg-sky-400 hover:text-black font-semibold"><a href="https://tailwindcss.com/docs/hover-focus-and-other-states">Tailwind</a></button>
+    <header class="bg-[#FFFBF0] px-4">
+        <!-- nav -->
+        <nav class="container mx-auto pt-4 flex justify-between">
+            <div class="w-48">
+                <img class="" src="./images/logo.png">
+            </div>
+            <div>
+                <ul class="flex gap-8 font-semibold">
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <div class="md:flex justify-center mt-28 py-8">
+            <div>
+                <h1 class="text-7xl uppercase font-bold"><span class="text-[#fabe4c]">Be The Penguin</span><br><span class="text-[#363958]">of winter</span></h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="bg-gradient-to-t from-[#A4BC46] to-[#85A019] px-8 py-4 text-white font-semibold text-xl rounded-lg">Buy Now</button>
+            </div>
+            <div>
+                <img src="./images/model.png" alt="">
+            </div>
+        </div>
+    </header>
 </body>
+
 </html>
